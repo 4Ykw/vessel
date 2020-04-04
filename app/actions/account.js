@@ -453,7 +453,7 @@ export function cancelWithdrawVesting(wif, params) {
 export function powerUp(wif, params) {
   return (dispatch: () => void) => {
     const { from_account, to_account, hiveAmount } = params;
-    const hiveFormat = [hiveAmount, "STEEM"].join(" ");
+    const hiveFormat = [hiveAmount, "HIVE"].join(" ");
     dispatch({
       type: ACCOUNT_POWER_UP_STARTED
     });
